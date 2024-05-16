@@ -2,9 +2,9 @@
 # Web 端实现类 Excel 应用的方案与产品
 集合了目前在 Web 端实现类 Excel 应用的主要实现方案及产品，其中包括流行的前端控件和前后端集成化后的整体方案，主要内容包含：
 - [Web 端实现类 Excel 应用的方案与产品](#web-端实现类-excel-应用的方案与产品)
-    - [前端 JavaScript 控件（库）](#前端-javascript-控件库)
-    - [集成方案](#集成方案)
-    - [选型参考](#选型参考)
+- [前端 JavaScript 控件（库）](#前端-javascript-控件库)
+- [集成方案](#集成方案)
+- [选型参考](#选型参考)
 
 ### 前端 JavaScript 控件（库）
 - [SpreadJS - 可嵌入您系统的在线 Excel](https://www.grapecity.com.cn/developer/spreadjs) 
@@ -27,5 +27,13 @@
         - Spreadsheet - 电子表格，也就是我们所熟知的 Excel
         ![alt text](spreadsheet.png)
     - 主要差别
-        - Grid/Table: 基于行和列 vs Spreadsheet: 基于单元格和区域
-        - 
+       |    功能点    |     Spreadsheet(Excel)     |     Grid/Table     |
+       | :----------: | :------------------------: | :----------------: |
+       | **数据单元** | 单元格 / Cell(Range Based) | 行记录 / Row based |
+       | **公式函数** |            需要            |       不需要       |
+       |   **分页**   |           不需要           |        需要        |
+       |   **分组**   |         行与列分组         |       行分组       |
+       |   **形状**   |            需要            |       不需要       |
+       |   **图表**   |            需要            |       不需要       |
+       |   **排序**   |            需要            |        需要        |
+       |   **筛选**   |            需要            |        需要        |
